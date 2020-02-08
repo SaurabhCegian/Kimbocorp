@@ -1,0 +1,14 @@
+.welcome {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.header {
+    text-align: center;
+}
+
+.task-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(11, 2, 49)
+}

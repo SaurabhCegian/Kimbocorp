@@ -1,0 +1,18 @@
+.address {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.address-button {
+    float: right;
+    background-color: rgb(13, 2, 56);
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 15px
+}

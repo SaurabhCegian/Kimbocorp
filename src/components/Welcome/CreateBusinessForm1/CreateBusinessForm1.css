@@ -1,0 +1,29 @@
+.CreateBusinessForm1 {
+    margin: 0 auto;
+    width: 500px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(12, 12, 90);
+    font-weight: bold;
+}
+
+.dropdown {
+    height: 20px;
+    width: 300px;
+}
+
+.create-business-button {
+    float: right;
+    background-color: rgb(13, 2, 56);
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 15px
+}
