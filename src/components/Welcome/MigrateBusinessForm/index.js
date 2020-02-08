@@ -1,11 +1,12 @@
 import React from 'react'
 import { Button, Checkbox, Form } from 'semantic-ui-react'
 import '../CreateBusinessForm1/CreateBusinessForm1.css'
-// import faker from 'faker'
-// import _ from 'lodash'
 
-export default function MigrateBusinessForm() {
-
+export default function MigrateBusinessForm(props) {
+    const onClickNext = (e) => {
+        e.preventDefault()
+        props.setCurrentCompFun('next')
+    }
     return (
         <div className='CreateBusinessForm1'>
             <h2>Business Registration Form</h2>
@@ -45,7 +46,7 @@ export default function MigrateBusinessForm() {
                         <option value="audi">Audi</option>
                     </select>
                 </div>
-                <button type="submit" class="ui button">Submit</button>
+                <button type="submit" className="create-business-button" onClick={onClickNext}>Next</button>
             </form>
         </div>
     )

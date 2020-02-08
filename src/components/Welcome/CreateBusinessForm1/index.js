@@ -8,9 +8,9 @@ export default function CreateBusinessForm1(props) {
         e.preventDefault()
         props.setCurrentCompFun('next')
     }
-    const onClickPrevious = (e) => {
-        e.preventDefault()
-    }
+    // const onClickPrevious = (e) => {
+    //     e.preventDefault()
+    // }
     return (
         <div className='CreateBusinessForm1'>
             <form class="ui form">

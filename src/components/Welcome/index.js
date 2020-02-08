@@ -19,7 +19,6 @@ export default function Welcome() {
     const [allForm, setAllForm] = useState(['Address', 'Director', 'IntangibleAssets', 'PersonalInformation'])
 
     const setCurrentCompFun = (status) => {
-        console.log(status)
         if (status === 'next') {
             let idx = index
             setCurrentComponent(allForm[index])
@@ -30,7 +29,7 @@ export default function Welcome() {
             setIndex(--idx)
         }
     }
-    console.log(currentComponent, index)
+
     return (
         <>
             <div className="welcome" >
@@ -79,7 +78,28 @@ export default function Welcome() {
                                     </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="1">
-                                    <Card.Body><MigrateBusinessForm /></Card.Body>
+                                    <Card.Body>
+                                        {
+                                            currentComponent === "" &&
+                                            <MigrateBusinessForm setCurrentCompFun={setCurrentCompFun} />
+                                        }
+                                        {
+                                            currentComponent === "Address" &&
+                                            <Address setCurrentCompFun={setCurrentCompFun} />
+                                        }
+                                        {
+                                            currentComponent === "Director" &&
+                                            <Director setCurrentCompFun={setCurrentCompFun} />
+                                        }
+                                        {
+                                            currentComponent === "IntangibleAssets" &&
+                                            <IntangibleAssets setCurrentCompFun={setCurrentCompFun} />
+                                        }
+                                        {
+                                            currentComponent === "PersonalInformation" &&
+                                            <PersonalInformation setCurrentCompFun={setCurrentCompFun} />
+                                        }
+                                    </Card.Body>
                                 </Accordion.Collapse>
                             </Card>
                         </Accordion>

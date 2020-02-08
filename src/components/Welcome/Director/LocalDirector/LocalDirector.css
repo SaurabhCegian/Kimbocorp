@@ -15,3 +15,8 @@
     cursor: pointer;
     font-size: 15px
 }
+
+.local-director {
+    margin: 0 auto;
+    width: 500px;
+}

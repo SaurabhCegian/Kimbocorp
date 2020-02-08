@@ -3,7 +3,7 @@ import './LocalDirector.css'
 
 export default function LocalDirector(props) {
     return (
-        <div>
+        <div className="local-director">
             <form class="ui form">
                 <div class="field">
                     <label className="label">Director</label>
