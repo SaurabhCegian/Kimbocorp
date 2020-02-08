@@ -7,11 +7,11 @@ export default function FillAddress() {
         <div className="fill-address">
             <form class="ui form">
                 <div class="field">
-                    <label>Address Line 1</label>
+                    <label id="label-text">Address Line 1</label>
                     <input placeholder="First Name" />
                 </div>
                 <div class="field">
-                    <label>Address Line 2</label>
+                    <label id="label-text">Address Line 2</label>
                     <input placeholder="First Name" />
                 </div>
             </form>

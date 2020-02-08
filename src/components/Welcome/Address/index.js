@@ -24,7 +24,7 @@ export default function Address(props) {
                     <Card>
                         <Card.Header>
                             <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                <span className="task-heading"><i class="fa fa-plus-circle" aria-hidden="true"></i> {'  '}Use Kimbocorp's Registered Address and Digial Mailroom Service</span>
+                                <span className="circle-plus-icon"><i class="fa fa-plus-circle" aria-hidden="true"></i></span><span className="task-heading"> {'  '}Use Kimbocorp's Registered Address and Digial Mailroom Service</span>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
@@ -36,7 +36,7 @@ export default function Address(props) {
                     <Card>
                         <Card.Header>
                             <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                                <span className="task-heading"><i class="fa fa-plus-circle" aria-hidden="true"></i>{'  '}Add my own business address</span>
+                                <span className="circle-plus-icon"><i class="fa fa-plus-circle" aria-hidden="true"></i></span><span className="task-heading">{'  '}Add my own business address</span>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="1">

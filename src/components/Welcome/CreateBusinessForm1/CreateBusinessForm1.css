@@ -5,7 +5,7 @@
 
 h2 {
     text-align: center;
-    color: rgb(12, 12, 90);
+    color: #1686f7;
     font-weight: bold;
 }
 
@@ -16,7 +16,7 @@ h2 {
 
 .create-business-button {
     float: right;
-    background-color: rgb(13, 2, 56);
+    background-color: #1686f7;
     border: none;
     color: white;
     padding: 8px 10px;
@@ -26,4 +26,11 @@ h2 {
     margin: 4px 2px;
     cursor: pointer;
     font-size: 15px
+}
+
+#label-text {
+    color: #7f8fa4;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
 }

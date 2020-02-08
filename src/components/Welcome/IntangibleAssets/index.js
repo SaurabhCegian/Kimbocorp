@@ -14,7 +14,7 @@ export default function IntangibleAssets(props) {
         <div className="intangible-asset">
             <form class="ui form">
                 <div class="field">
-                    <label>Accounting</label>
+                    <label id="label-text">Accounting</label>
                     <select id="cars">
                         <option value="a">Select</option>
                         <option value="a">Entrepreneur</option>
@@ -25,7 +25,7 @@ export default function IntangibleAssets(props) {
                 </div>
 
                 <div class="field">
-                    <label>Trademark</label>
+                    <label id="label-text">Trademark</label>
                     <select id="cars">
                         <option value="a">Select</option>
                         <option value="a">Singapore registered Trademark</option>
@@ -33,7 +33,7 @@ export default function IntangibleAssets(props) {
                 </div>
 
                 <div class="field">
-                    <label>Website</label>
+                    <label id="label-text">Website</label>
                     <select id="cars">
                         <option value="a">Corporate website</option>
                         <option value="a">E-commerce website</option>
@@ -41,7 +41,7 @@ export default function IntangibleAssets(props) {
                 </div>
 
                 <div class="field">
-                    <label>I do not need one now</label>
+                    <label id="label-text">I do not need one now</label>
                     <select id="cars">
                         <option value="a">Yes</option>
                         <option value="a">No</option>
@@ -49,7 +49,7 @@ export default function IntangibleAssets(props) {
                 </div>
                 <h3>Others</h3>
                 <div class="field">
-                    <label className="label">CBIA</label>
+                    <label id="label-text">CBIA</label>
                     <select id="cars">
                         <option value="cbia">Contract-based intangible assets</option>
                         <option value="cbia"> Singapore company operating license</option>
@@ -74,7 +74,7 @@ export default function IntangibleAssets(props) {
                     </select>
                 </div>
                 <div class="field">
-                    <label className="label">RRIA</label>
+                    <label id="label-text">RRIA</label>
                     <select id="cars">
                         <option value="rria">Relationship-related intangible assets</option>
                         <option value="rria">New local nominee director relationships</option>
@@ -99,7 +99,7 @@ export default function IntangibleAssets(props) {
                     </select>
                 </div>
                 <div class="field">
-                    <label className="label">CRIA</label>
+                    <label id="label-text">CRIA</label>
                     <select id="cars">
                         <option value="cria">Copyright-related intangible assets</option>
                         <option value="cria">    Protection for traditional literacy works including lyrics, composition, books</option>
@@ -114,7 +114,7 @@ export default function IntangibleAssets(props) {
                 </div>
 
                 <div class="field">
-                    <label>CIIA</label>
+                    <label id="label-text">CIIA</label>
                     <select id="cars">
                         <option value="ciia">Customer-related intangible assets</option>
                         <option value="ciia">Customer lists</option>
@@ -122,7 +122,7 @@ export default function IntangibleAssets(props) {
                     </select>
                 </div>
                 <div class="field">
-                    <label>TIIA</label>
+                    <label id="label-text">TIIA</label>
                     <select name="tiia">
                         <option value="tiia">Technology-based intangible assets</option>
                         <option value="tiia">Software acquisition</option>
@@ -132,7 +132,7 @@ export default function IntangibleAssets(props) {
                     </select>
                 </div>
                 <div class="field">
-                    <label className="label">Others</label>
+                    <label id="label-text">Others</label>
                     <textarea placeholder="Others" />
                 </div>
                 <button type="submit" className="director-button" onClick={onClickNext}>Next</button>

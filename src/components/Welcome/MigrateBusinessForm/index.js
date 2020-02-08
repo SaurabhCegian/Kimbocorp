@@ -12,11 +12,11 @@ export default function MigrateBusinessForm(props) {
             <h2>Business Registration Form</h2>
             <form class="ui form">
                 <div class="field">
-                    <label className="label">UEN</label>
+                    <label id="label-text" className="label">UEN</label>
                     <input placeholder="First Name" />
                 </div>
                 <div class="field">
-                    <label>SSIC - Company Activity</label>
+                    <label id="label-text">SSIC - Company Activity</label>
                     <select id="cars">
                         <option value="volvo">Volvo</option>
                         <option value="saab">Saab</option>
@@ -25,11 +25,11 @@ export default function MigrateBusinessForm(props) {
                     </select>
                 </div>
                 <div class="field">
-                    <label>Describe your Business Activity:</label>
+                    <label id="label-text">Describe your Business Activity:</label>
                     <input placeholder="Last Name" />
                 </div>
                 <div class="field">
-                    <label>Why are you interested to start a business in Singapore?</label>
+                    <label id="label-text">Why are you interested to start a business in Singapore?</label>
                     <select id="cars">
                         <option value="volvo">Volvo</option>
                         <option value="saab">Saab</option>
@@ -38,7 +38,7 @@ export default function MigrateBusinessForm(props) {
                     </select>
                 </div>
                 <div class="field">
-                    <label>What is your source of funds?</label>
+                    <label id="label-text">What is your source of funds?</label>
                     <select id="cars">
                         <option value="volvo">Volvo</option>
                         <option value="saab">Saab</option>

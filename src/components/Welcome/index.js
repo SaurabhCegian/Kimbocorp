@@ -14,19 +14,27 @@ import IntangibleAssets from './IntangibleAssets';
 
 export default function Welcome() {
 
-    const [index, setIndex] = useState(0)
+    const [index, setIndex] = useState(-1)
     const [currentComponent, setCurrentComponent] = useState("")
     const [allForm, setAllForm] = useState(['Address', 'Director', 'IntangibleAssets', 'PersonalInformation'])
 
     const setCurrentCompFun = (status) => {
         if (status === 'next') {
-            let idx = index
-            setCurrentComponent(allForm[index])
-            setIndex(++idx)
+            let idx = index + 1
+            if (idx > 3) {
+                alert("this is last form")
+                return;
+            }
+            setCurrentComponent(allForm[idx])
+            setIndex(idx)
         } else if (status === 'prev') {
-            let idx = index
-            setCurrentComponent(allForm[index])
-            setIndex(--idx)
+            let idx = index - 1
+            if (idx === -1) {
+                setCurrentComponent("")
+            } else {
+                setCurrentComponent(allForm[idx])
+            }
+            setIndex(idx)
         }
     }
 
@@ -37,13 +45,13 @@ export default function Welcome() {
                     <form>
                         <div className="header">
                             <img src={logo} class="welcome-logo" />
-                            <p>Welcome to Kimbocorp, How can we help you?</p>
+                            <p className="header-text">Welcome to Kimbocorp, How can we help you?</p>
                         </div>
                         <Accordion>
                             <Card>
                                 <Card.Header>
                                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                        <span className="task-heading"><i class="fa fa-plus-circle" aria-hidden="true"></i> {'  '}Create Business</span>
+                                        <span className="circle-plus-icon"><i class="fa fa-plus-circle" aria-hidden="true"></i></span><span className="task-heading"> {'  '}Create Business</span>
                                     </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="0">
@@ -74,7 +82,7 @@ export default function Welcome() {
                             <Card>
                                 <Card.Header>
                                     <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                                        <span className="task-heading"><i class="fa fa-plus-circle" aria-hidden="true"></i>{'  '}Migrate Business!</span>
+                                        <span className="circle-plus-icon"><i class="fa fa-plus-circle" aria-hidden="true"></i></span><span className="task-heading">{'  '}Migrate Business!</span>
                                     </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="1">

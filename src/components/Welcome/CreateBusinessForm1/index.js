@@ -15,11 +15,11 @@ export default function CreateBusinessForm1(props) {
         <div className='CreateBusinessForm1'>
             <form class="ui form">
                 <div class="field">
-                    <label className="label">Proposed Name - First Choice</label>
+                    <label id="label-text">Proposed Name - First Choice</label>
                     <input placeholder="First Name" />
                 </div>
                 <div class="field">
-                    <label>SSIC - Company Activity</label>
+                    <label id="label-text">SSIC - Company Activity</label>
                     <select id="cars">
                         <option value="a">A</option>
                         <option value="b">B</option>
@@ -27,11 +27,11 @@ export default function CreateBusinessForm1(props) {
                     </select>
                 </div>
                 <div class="field">
-                    <label>Describe your Business Activity:</label>
+                    <label id="label-text">Describe your Business Activity:</label>
                     <input placeholder="Last Name" />
                 </div>
                 <div class="field">
-                    <label>Why are you interested to start a business in Singapore?</label>
+                    <label id="label-text">Why are you interested to start a business in Singapore?</label>
                     <select id="cars">
                         <option value="To seek investors">To seek investors</option>
                         <option value="To seek new business opportunits">To seek new business opportunits</option>
@@ -40,7 +40,7 @@ export default function CreateBusinessForm1(props) {
                     </select>
                 </div>
                 <div class="field">
-                    <label>What is your source of funds?</label>
+                    <label id="label-text">What is your source of funds?</label>
                     <select id="cars">
                         <option value="Business Revnue">Business Revnue</option>
                         <option value="Personal Savings">Personal Savings</option>
